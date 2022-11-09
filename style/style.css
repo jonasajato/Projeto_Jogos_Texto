@@ -5,6 +5,10 @@
 	color: black;
 }
 
+.container {
+	text-align: justify;
+}
+
 .col-md-4 {
 	text-align: justify;
 }
