@@ -61,7 +61,8 @@ const textNodes = [
         text: 'Se entregar não é uma opção. Você corre, se desvencilhando da multidão e correndo em direção a saída, mas os guardas começam a alertar os demais para que fechem o portão. O que você faz?',
         options: [
             {
-                text: 'Passar por baixo do portão'
+                text: 'Passar por baixo do portão',
+                nextText: 5
             },
             {
                 text: 'Correr para outra direção'
@@ -84,6 +85,11 @@ const textNodes = [
     {
         id: 4,
         text: 'Os guardas sacam suas espadas e se aproximam de você. Desarmado, você levanta os punhos, pronto para lutar. Infelizmente a última coisa que você vê é o cabo da espada vindo em sua direção, te derrubando.'
+    },
+
+    {
+        id: 5,
+        text: 'Usando o que resta de sua força, você corre e se joga para tentar passar por baixo do portão antes que ele feche, e... Consegue! Mas os guardas ainda estão atrás de você. O que você faz?'
     }
 ]
 
