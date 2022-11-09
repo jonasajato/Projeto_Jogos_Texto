@@ -5,6 +5,10 @@
 	color: black;
 }
 
+.col-md-4 {
+	text-align: justify;
+}
+
 .h1 {
 	text-align: center;
 	color: #064D88;

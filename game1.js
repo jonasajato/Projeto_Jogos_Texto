@@ -57,10 +57,29 @@ const textNodes = [
         ]
     },
     {
-    id: 2,
+        id: 2,
+        text: 'Se entregar não é uma opção. Você corre, se desvencilhando da multidão e correndo em direção a saída, mas os guardas começam a alertar os demais para que fechem o portão. O que você faz?',
+        options: [
+            {
+                text: 'Passar por baixo do portão'
+            },
+            {
+                text: 'Correr para outra direção'
+            }
+        ]
+        
     },
     {
         id: 3,
+        text: 'Você tenta argumentar que é inocente, contando o que aconteceu, mas os guardas o ignoram completamente, te prendem pelos braços e o arrastam para a masmorra.',
+        options: [
+            {
+                text: 'Aceitar seu destino'
+            },
+            {
+                text: 'Tentar escapar'
+            }
+        ]
     },
     {
         id: 4,
