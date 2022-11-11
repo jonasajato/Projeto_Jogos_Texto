@@ -218,7 +218,7 @@ const textNodes = [
 
     {
         id: 21,
-        text: 'Com alguns socos você consegue fazer ele se afastar. Ao olhar em seus olhos, nota-se que ele não está no controle de suas ações. Ele se joga novamente em cima de você, mas você consegue alcançar um objeto sólido e começa a golpeá-lo na cabeça, até que seu corpo cai. A criatura agora está no chão, agonizando. Você está ferido, mas mesmo assim tenta seguir adiante.',
+        text: 'Com alguns socos você consegue fazer ele se afastar. Ao olhar em seus olhos, nota-se que ele não está no controle de suas ações. Ele se joga novamente em cima de você, mas você retira uma pedra de sua bolsa e começa a golpeá-lo na cabeça, até que seu corpo cai. A criatura agora está no chão, agonizando. Você está ferido, mas mesmo assim tenta seguir adiante.',
         options: [
             {
                 text: 'Continuar',
@@ -286,6 +286,94 @@ const textNodes = [
             },
         ]
     },
+
+    {
+        id: 9,
+        text: '"Veio ganhar algum dinheiro, né?" diz o Macaco-Cachorro. "Bem, você pode dividir um pouco dos seus lucros conosco!" Como você não tem nada para oferecer a eles, pode tirar uma pedra de sua bolsa e lança um encantamento sobre ela, fazendo-a parecer uma pepita de ouro. Ou, se tiver coragem, pode tentar combate-los.',
+        options: [
+            {
+                text: 'Usar magia',
+                nextText: 29
+            },
+
+            {
+                text: 'Preparar-se para o combate',
+                nextText: 30
+                
+            },
+        ]
+    },
+
+    {
+        id: 29,
+        text: 'Eles aceitam a sua oferta e convocam o porteiro, que abre uma pequena porta dentro da porta levadiça para deixar você entrar. Você os deixa discutindo por causa da pepita de ouro.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 31
+            }
+        ]
+    },
+
+    {
+        id: 31,
+        text: 'Você caminha em frente, entrando em pátio aberto e espaçoso, circundado por grandes muros. Há várias tochas queimando, e grupos de figuras se movimentam na escuridão. Há um monumento de algum tipo no centro do pático - talvez uma fonte. Olhando para o outro lado do pátio, você consegue ver o que parece ser a entrada principal da torre. O que você faz?',
+        options: [
+            {
+                text: 'Esgueira-se pela parede na direção da torre, contornando o pátio',
+                nextText: 14
+            },
+
+            {
+                text: 'Caminha decididamente, atravessando o pátio',
+                nextText: 15
+            },
+
+            {
+                text: 'Vai na ponta dos pés pelas sombras, na direção de um dos grupos',
+                nextText: 16
+            }
+        ]
+    },
+
+    {
+        id: 18,
+        text: 'A sombra do muro dificulta muito a visão. Uma pedra solta desliza e você perde o equilibrio, oscilando à beira do que você tem consciência de que deve ser um poço profundo. Você se segura firme e segue caminho.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 32
+            }
+        ]
+    },
+
+    {
+        id: 32,
+        text: 'No canto mais distante do pátio, você encontra um arvusto diferente, com galhos contorcidos a partir da haste central, como se estivesse em agonia. As folhas têm a forma de diamantes, com pequenas amoras por baixo, chatas e com forma de pastilhas. Você pode levar algumas amoras com você na sua aventura e avançar um pouco mais ao longo do muro para a entrada principal da Cidadela.',
+        options: [
+            {
+                text: 'Pegar amoras',
+                nextText: 33
+            }
+        ]
+    },
+
+    {
+        id: 33,
+        text: 'Há uma grande porta de madeira à sua frente, firmemente trancada. Você pode bater três vezes para chamar o guarda ou usar uma magia para tentar abri-la.',
+        options: [
+            {
+                text: 'Chamar o guarda',
+                nextText: 34
+            },
+
+            {
+                text: 'Usar magia',
+                nextText: 35
+            }
+        ]
+    },
+    
 ]
 
 startGame()
