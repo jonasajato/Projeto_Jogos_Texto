@@ -35,62 +35,257 @@ function selectOption(option){
     const nextTextNodeId = option.nextText
     state = Object.assign(state, option.setState)
     showTextNode(nextTextNodeId)
+    if (nextTextNodeId <= 0) {
+        return window.history.back(-1);
+    }
 }
 
 const textNodes = [
     {
         id: 1,
-        text: 'Você está caminhando pelas ruas de uma grande cidade. O comércio está movimentado, há muitas pessoas ao seu redor. Você está distraido, nem percebe uma figura vindo correndo em sua direção. Ela está segurando uma bolsa, vocês se esbarram e ambos caem no chão. Ela levanta e continua correndo, deixando a bolsa para trás. Você levanta, pega a bolsa e tenta chamar a atenção dela. Quando olha para trás, dois guardas estão vindo em sua direção te acusando de roubar a bolsa. O que você faz?',
+        text: 'O ordeiro e generoso povo do Vale dos Salgueiros vive há oito anos sob o terror e medo do feiticeiro Balthus Dire. Terror - porque o poder dele é realmente aterrorizante - e medo causados pela notícia que acabou chegando aos ouvidos desse povo, vinda dos domínios do feiticeiro, de que seus ambiciosos planos de conquista começariam pelo próprio Vale. Um fiel Semi-Elfo enviado em uma missão de espionagem à Torre Negra voltou galopando para o Vale há três dias com uma mensagem desesperada. Do interior das cavernas de Rocha Escarpada, Balthus Dire tinha recurato um exército de Caóticos e se preparava para atacar com eles o Vale dentro de uma semama.',
         options: [
             {
-                text: 'Correr!',
+                text: 'Continuar',
                 nextText: 2
-            },
-            {
-                text: 'Falar que é inocente',
-                nextText: 3
-            },
-            {
-                text: 'Combater os guardas',
-                nextText: 4
             }
         ]
     },
     {
         id: 2,
-        text: 'Se entregar não é uma opção. Você corre, se desvencilhando da multidão e correndo em direção a saída, mas os guardas começam a alertar os demais para que fechem o portão. O que você faz?',
+        text: 'O bom Rei Salamon era um homem de ação. Foram enviados mensageiros por todo o Vale no mesmo dia para preparar as fedas e convocar os homens para a guerra. Foram enviados também cavaleiros à Grande Floresta de Yore para avisar aos Semi-Elfos que moravam lá e fazer um apelo para que se aliassem às forças. O Rei Salamon era também um homem sábio. Ele sabia muito bem que as notícias inevitavelmente chegariam aos ouvidos do Grande Mago de Yore, um mestre da magia branca de grandes poderes, que vivia nas profundezas da floresta. O mago era velho e não resistiria a uma batalha destas proporções. Mas ele havia ensinado suas artes a vários jovens magos, e talvez um de seus discípulos de magia ajudasse o rei e seus súditos com coragem e ambição.',
         options: [
             {
-                text: 'Passar por baixo do portão',
-                nextText: 5
-            },
-            {
-                text: 'Correr para outra direção'
+                text: 'Continuar',
+                nextText: 3
             }
         ]
         
     },
     {
         id: 3,
-        text: 'Você tenta argumentar que é inocente, contando o que aconteceu, mas os guardas o ignoram completamente, te prendem pelos braços e o arrastam para a masmorra.',
+        text: 'Você é o aluno brilhante do Grande Mago de Yore. Ele tem sido um Mestre duro, e sua própria impaciência muitas vezes foi mais forte do que você. Talvez um pouco precipitadamente, você partiu de imediato para a corte de Salamon. O rei recebeu-o entusiasticamente e explicou seu plano. A batalha poderia ser evitada sem derramamento de sangue de Balthus fosse assassinado antes que seu exército pudesse ser reunido.',
         options: [
             {
-                text: 'Aceitar seu destino'
-            },
-            {
-                text: 'Tentar escapar'
+                text: 'Continuar',
+                nextText: 4
             }
         ]
     },
     {
         id: 4,
-        text: 'Os guardas sacam suas espadas e se aproximam de você. Desarmado, você levanta os punhos, pronto para lutar. Infelizmente a última coisa que você vê é o cabo da espada vindo em sua direção, te derrubando.'
+        text: 'A missão que você tem pela frente é extremamente perigosa. Balthus Dire está cercado, em sua Cidadela, por uma multidão de criaturas assombrosas. O Rei Salamon expôs a você como seria a sua missão e o advertiu dos perigos que estavam à sua frente. Você deixa o Vale dos Salgueiros na longa caminhada para a Torre Negra. No sopé da colina de Rocha Escarpada, você pode ver sua silhueta contra o céu escuro...',
+        options: [
+            {
+                text: 'Começar aventura!',
+                nextText: 5
+            }
+        ]
     },
 
     {
         id: 5,
-        text: 'Usando o que resta de sua força, você corre e se joga para tentar passar por baixo do portão antes que ele feche, e... Consegue! Mas os guardas ainda estão atrás de você. O que você faz?'
-    }
+        text: 'O sol se põe. Enquanto o crepúsculo se transforma em escuridão, você começa a subir a colina na direção da ameaçadora forma que se desenha contra o céu noturno. A cidadela fica a menos de uma hora de escalada. A uma certa distância de seus muros, você pára para descansar - um erro, uma vez que dessa posição, ela parece um espectro medonho do qual não se pode escapar. Os cabelos no seu pescoço se arrepiam enquanto você observa.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 6
+            }
+        ]
+    },
+
+    {
+        id: 6,
+        text: 'Mas você se envergonha de seus medos. Com inflexível decisão, você marcha adiante da direção do portão principal, onde você sabe que encontrará guardas à sua espera. Você considera suas opções. Já pensou em se apresentar como um especialista em plantas medicinais que veio tratar de um guarda com febre. Poderia também se dizer um comerciante ou artesão - talvez um carpinteiro. Poderia até mesmo ser um nômade que buscasse abrigo para a noite. Enquanto você pondera as possibilidades, e as histórias que terá que contar aos guardas, acaba chegando à trilha principal que conduz aos portões. Duas lanternas brilham em cada um dos lados da porta levadiça.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 7
+            }
+        ]
+    },
+
+    {
+        id: 7,
+        text: 'Você ouve grunhidos abafados ao se aproimar, e vê duas criaturas de aparência absurda. Do lado esquero está uma criatura horrível, com a cabeça de um cachorro e o corpo de um grande macaco, flexionando seus braços fortíssimos. Do outro lado, encontra-se de fato o seu oposto, com a cabeça de um macaco no corpo de um cachorro grande. Este último guarda se aproxima nas suas quatro patas. Pára alguns metros de distância diante de você, ergue-se sobre as patas traseiras e dirige a palavra para você. O que você faz?',
+        options: [
+            {
+                text: 'Você se apresenta como um especialista em plantas medicinais',
+                nextText: 8
+            },
+
+            {
+                text: 'Você diz que é um comerciante',
+                nextText: 9
+            },
+
+            {
+                text: 'Você procura abrigo para pernoitar',
+                nextText: 10
+            }
+        ]
+    },
+
+    {
+        id: 8,
+        text: 'O Macaco-Cachorro pede para ver as suas ervas. Por sorte, você tinha apanhado alguns punhados de ervas no caminho, e você mostra isso a eles. Inclinando a cabeça para um lado, a criatura olha para você com desconfiança. Pergunta a você então o nome do guarda que você veio tratar - uma coisa que não estava nos seus planos! Você pensa rapidamente em um nome para enganar a criatura:',
+        options: [
+            {
+                text: 'Kylltrog',
+                nextText: 11
+            },
+
+            {
+                text: 'Pincus',
+                nextText: 12
+            },
+
+            {
+                text: 'Blag',
+                nextText: 13
+            }
+        ]
+    },
+
+    {
+        id: 11,
+        text: 'O Macaco-Cachorro ri e diz a você que Kylltrog é um preguiçoso que não serve para nada, e não vale a pena salvá-lo. Você solta um suspiro de alívio quando ele caminha de volta e grita para chamar o porteiro. Alguns momentos depois, o porteiro aparece e abre uma pequena porta para deixar você entrar. Você caminha em frente, entrando em pátio aberto e espaçoso, circundado por grandes muros. Há várias tochas queimando, e grupos de figuras se movimentam na escuridão. Há um monumento de algum tipo no centro do pático - talvez uma fonte. Olhando para o outro lado do pátio, você consegue ver o que parece ser a entrada principal da torre. O que você faz?',
+        options: [
+            {
+                text: 'Esgueira-se pela parede na direção da torre, contornando o pátio',
+                nextText: 14
+            },
+
+            {
+                text: 'Caminha decididamente, atravessando o pátio',
+                nextText: 15
+            },
+
+            {
+                text: 'Vai na ponta dos pés pelas sombras, na direção de um dos grupos',
+                nextText: 16
+            }
+        ]
+    },
+
+    {
+        id: 14,
+        text: 'Ao se esgueirar pela muralha, você ouve um gemido baixo uns poucos metros adiante. Quando se aproxima, você consegue distinguir a forma de um homem no chão, obviamente sentindo dores. Ele pede socorro. O que você faz?',
+        options: [
+            {
+                text: 'Ajudar o homem',
+                nextText: 17
+            },
+
+            {
+                text: 'Ignorar o homem',
+                nextText: 18
+            }
+        ]
+    },
+    
+    {
+        id: 17,
+        text: 'O homem é velho e foi atingido na cabeça por algum tipo de porrete. Ele pede remédio, mas você não tem nenhum. Você poderia usar uma magia para recuperá-lo, mas isso deixará você fraco. Se você o ajudar, ele se ofecere para lhe acompanhar. O que você faz?',
+        options: [
+            {
+                text: 'Usar a magia e ajudar o homem',
+                nextText: 19
+            },
+
+            {
+                text: 'Deixá-lo e seguir viagem',
+                nextText: 20
+            }
+        ]
+    },
+
+    {
+        id: 19,
+        text: 'A força do velho começa a retornar à medida em que sua magia começa a fazer efeito, isso drena sua energia e você sente-se um pouco fraco. Ele conta para você que foi espancado na cabeça por cruéis Ganjees, criaturas que tem prazer em fazer maldades. Você conduz a conversa no sentido da Cidadela propriamente dita. De repente, sem nenhuma razão visível, uma pontada de dor o atinge por dentro. Seus olhos ficam estreitos e ele se atira para frente, cravando seus dentes - dentes afiados, diga-se de passagem - no seu braço. Você começa a sangrar. Ele continua mordendo. O que você faz?',
+        options: [
+            {
+                text: 'Tentar afastá-lo usando força',
+                nextText: 21
+            },
+
+            {
+                text: 'Tentar afastá-lo usando magia',
+                nextText: 22
+            }
+        ]
+    },
+
+    {
+        id: 21,
+        text: 'Com alguns socos você consegue fazer ele se afastar. Ao olhar em seus olhos, nota-se que ele não está no controle de suas ações. Ele se joga novamente em cima de você, mas você consegue alcançar um objeto sólido e começa a golpeá-lo na cabeça, até que seu corpo cai. A criatura agora está no chão, agonizando. Você está ferido, mas mesmo assim tenta seguir adiante.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 23
+            }
+        ]
+    },
+
+    {
+        id: 23,
+        text: 'A sombra do muro dificulta muito a visão. Uma pedra solta desliza e você perde o equilibrio. Fraco e ferido, não consegue se segurar por muito tempo. Você cai em um profundo poço.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 24
+            }
+        ]
+    },
+
+    {
+        id: 24,
+        text: 'Você cai no fundo de um poço profundo - possivelmente um manancial de água tapado. Você se recompõe e parece estar inteiro. Mas como você vai sair? Cavar apoios para os pés nas paredes levaria um tempo enorme. Outra opção seria gritar pedindo ajuda. O que você faz?',
+        options: [
+            {
+                text: 'Cavar apoio para tentar escalar',
+                nextText: 25
+            },
+
+            {
+                text: 'Gritar por ajuda',
+                nextText: 26
+            }
+        ]
+    },
+
+    {
+        id: 25,
+        text: 'Você começa a cavar os apoios e escalar o poço. Ao chegar na metade, sente sua força se esvair. Seus cortes começam a sangrar mais ainda. É sua vida que está em jogo. Você pode respirar fundo e tentar continuar cavando, ou gritar por ajuda.',
+        options: [
+            {
+                text: 'Continuar cavando',
+                nextText: 27
+            },
+
+            {
+                text: 'Gritar por ajuda',
+                nextText: 28
+            }
+        ]
+    },
+
+    {
+        id: 27,
+        text: 'Você chega ao seu limite tentando continuar cavando e escalando. Sua energia está fraca devido ao esforço, você tentar lançar uma magia, mas não consegue. Está pálido, perdeu muito sangue. Em um último esforço desesperado de tentar sair, você sente sua energia se esvair. Ainda faltavam vários metros para você chegar a saída. Seu corpo cai novamente e bate no fundo do poço. Você dá seu último suspiro.',
+        options: [
+            {
+                text: 'Retornar ao início da aventura',
+                nextText: 1
+            },
+
+            {
+                text: 'Sair do jogo',
+                nextText: -1
+                
+            },
+        ]
+    },
 ]
 
 startGame()
