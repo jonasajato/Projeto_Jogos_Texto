@@ -26,6 +26,8 @@ function showTextNode(textNodeIndex){
     })
 }
 
+
+
 function showOption(option){
     return option.requiredState == null || option.requiredState(state)
     
@@ -306,10 +308,10 @@ const textNodes = [
 
     {
         id: 29,
-        text: 'Eles aceitam a sua oferta e convocam o porteiro, que abre uma pequena porta dentro da porta levadiça para deixar você entrar. Você os deixa discutindo por causa da pepita de ouro.',
+        text: 'Você faz secretamente uma magia com uma pedra retirada da bolsa, transformando-a temporariamente em um objeto semelhante a uma pepita de ouro. Você entrega ela aos guardas. Eles aceitam a sua oferta e convocam o porteiro, que abre uma pequena porta dentro da porta levadiça para deixar você entrar. Você os deixa discutindo por causa da pepita de ouro.',
         options: [
             {
-                text: 'Continuar',
+                text: 'Continuar aventura',
                 nextText: 31
             }
         ]
@@ -338,7 +340,7 @@ const textNodes = [
 
     {
         id: 18,
-        text: 'A sombra do muro dificulta muito a visão. Uma pedra solta desliza e você perde o equilibrio, oscilando à beira do que você tem consciência de que deve ser um poço profundo. Você se segura firme e segue caminho.',
+        text: 'Você ignora o homem e segue adiante, ainda esgueirando-se pela muralha. A sombra do muro dificulta muito a visão. Uma pedra solta desliza e você perde o equilibrio, oscilando à beira do que você tem consciência de que deve ser um poço profundo. Você se segura firme e segue caminho.',
         options: [
             {
                 text: 'Continuar',

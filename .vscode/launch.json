@@ -8,14 +8,14 @@
         "name": "Launch Chrome",
         "request": "launch",
         "type": "chrome",
-        "url": "file:///C:/Users/jonas/OneDrive/%C3%81rea%20de%20Trabalho/Projeto_Jogos_Texto/index.html",
+        "url": "file:///C:/Users/jonas/OneDrive/Documentos/GitHub/Projeto_Jogos_Texto/index.html",
         "webRoot": "${workspaceFolder}"
     },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/jonas/OneDrive/%C3%81rea%20de%20Trabalho/Projeto_Jogos_Texto/index.html",
+            "url": "file:///C:/Users/jonas/OneDrive/Documentos/GitHub/Projeto_Jogos_Texto/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
