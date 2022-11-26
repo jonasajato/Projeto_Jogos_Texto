@@ -1,3 +1,15 @@
+p {
+	font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+	font-family: Cascadia Code ExtraLight, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-item {
+	font-family: Cascadia Code ExtraLight, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .fic1 {
 	border-radius: inherit;
 	text-align: justify;
@@ -7,10 +19,12 @@
 
 .container {
 	text-align: justify;
+	margin-top: 25px;
 }
 
 .col-md-4 {
 	text-align: justify;
+	margin-top: 25px;
 }
 
 .h1 {
@@ -34,6 +48,17 @@
 	height:auto;
 	margin: auto;
 	display: block;
+}
+
+.jumbotron {
+	margin-top: 30px;
+	font-family: Helvetica, sans-serif, Arial;
+	font-size: 15px;
+}
+
+.display-3 {
+	font-family: Cascadia Code ExtraLight, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
 }
 
 
