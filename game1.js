@@ -258,7 +258,7 @@ const textNodes = [
 
     {
         id: 25,
-        text: 'Você começa a cavar os apoios e escalar o poço. Ao chegar na metade, sente sua força se esvair. Seus cortes começam a sangrar mais ainda. É sua vida que está em jogo. Você pode respirar fundo e tentar continuar cavando, ou gritar por ajuda.',
+        text: 'Você começa a cavar os apoios e escalar o poço. Ao chegar na metade, sente sua força se esvair. Seus cortes começam a sangrar mais ainda. É sua vida que está em jogo. Você pode respirar fundo e tentar continuar cavando, ou gritar por ajuda. O que você faz?',
         options: [
             {
                 text: 'Continuar cavando',
@@ -291,7 +291,7 @@ const textNodes = [
 
     {
         id: 9,
-        text: '"Veio ganhar algum dinheiro, né?" diz o Macaco-Cachorro. "Bem, você pode dividir um pouco dos seus lucros conosco!" Como você não tem nada para oferecer a eles, pode tirar uma pedra de sua bolsa e lança um encantamento sobre ela, fazendo-a parecer uma pepita de ouro. Ou, se tiver coragem, pode tentar combate-los.',
+        text: '"Veio ganhar algum dinheiro, né?" diz o Macaco-Cachorro. "Bem, você pode dividir um pouco dos seus lucros conosco!" Como você não tem nada para oferecer a eles, pode tirar uma pedra de sua bolsa e lança um encantamento sobre ela, fazendo-a parecer uma pepita de ouro. Ou, se tiver coragem, pode tentar combate-los. O que você faz?',
         options: [
             {
                 text: 'Usar magia',
@@ -319,7 +319,7 @@ const textNodes = [
 
     {
         id: 31,
-        text: 'Você caminha em frente, entrando em pátio aberto e espaçoso, circundado por grandes muros. Há várias tochas queimando, e grupos de figuras se movimentam na escuridão. Há um monumento de algum tipo no centro do pático - talvez uma fonte. Olhando para o outro lado do pátio, você consegue ver o que parece ser a entrada principal da torre. O que você faz?',
+        text: 'Você caminha em frente, entrando em pátio aberto e espaçoso, circundado por grandes muros. Há várias tochas queimando, e grupos de figuras se movimentam na escuridão. Há um monumento de algum tipo no centro do pátio - talvez uma fonte. Olhando para o outro lado do pátio, você consegue ver o que parece ser a entrada principal da torre. O que você faz?',
         options: [
             {
                 text: 'Esgueira-se pela parede na direção da torre, contornando o pátio',
@@ -351,7 +351,7 @@ const textNodes = [
 
     {
         id: 32,
-        text: 'No canto mais distante do pátio, você encontra um arvusto diferente, com galhos contorcidos a partir da haste central, como se estivesse em agonia. As folhas têm a forma de diamantes, com pequenas amoras por baixo, chatas e com forma de pastilhas. Você pode levar algumas amoras com você na sua aventura e avançar um pouco mais ao longo do muro para a entrada principal da Cidadela.',
+        text: 'No canto mais distante do pátio, você encontra um arbusto diferente, com galhos contorcidos a partir da haste central, como se estivesse em agonia. As folhas têm a forma de diamantes, com pequenas amoras por baixo, chatas e com forma de pastilhas. Você pode levar algumas amoras com você na sua aventura e avançar um pouco mais ao longo do muro para a entrada principal da Cidadela.',
         options: [
             {
                 text: 'Pegar amoras',
@@ -375,7 +375,192 @@ const textNodes = [
             }
         ]
     },
+
+    {
+        id: 34,
+        text: 'A porta abre e uma criatura grande e abrutalhada sai. Possui um chifre pontudo no meio da testa, e sua pele parece ser recoberta de armadura. Rosna para saber o que você quer e exige a senha antes de deixar que você entre. Você sabe a senha? Se não souber, vai ter que forçar sua entrada!',
+        options: [
+            {
+                text: 'Eu sei a senha',
+                nextText: 36
+            },
+
+            {
+                text: 'Forçar entrada',
+                nextText: 37
+            }
+        ]
+    },
+
+    {
+        id: 36,
+        text: 'Sabe mesmo? Qual é a senha?',
+        options: [
+            {
+                text: 'Cimitarra',
+                nextText: 38
+            },
+
+            {
+                text: 'Ganjees',
+                nextText: 39
+            },
+
+            {
+                text: 'Kraken',
+                nextText: 40
+            }
+        ]
+    },
+
+    {
+        id: 36,
+        text: 'A criatura grunhe e abre a porta para deixar você entrar.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 41
+            }
+        ]
+    },
+
     
+    {
+        id: 41,
+        text: 'A criatura grunhe e abre a porta para deixar você entrar.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 
+            }
+        ]
+    },
+
+    {
+        id: 39,
+        text: 'A criatura olha para você. Seus olhos se estreitam. Há uma lança longa em suas mãos, que ela rapidamente aponta em sua direção. "Essa não é a senha!", ela grita enquanto te ataca!',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 42
+            }
+        ]
+    },
+
+    {
+        id: 42,
+        text: 'O HOMEM-RINO dá um passo adiante e desfer uma estocada com sua lança na sua direção. Você pula rapidamente e se desvia. Embora ele não esteja usando uma armadura, seu couro grosso parece ser proteção suficiente. Vai tentar combate-lo corpo a corpo ou usar uma magia?',
+        options: [
+            {
+                text: 'Lutar corpo a corpo',
+                nextText: 43
+            },
+
+            {
+                text: 'Lutar usando magia',
+                nextText: 44
+            }
+        ]
+    },
+
+    {
+        id: 43,
+        text: 'A criatura é imensa e consegue absorver facilmente seus golpes. Após uma tentativa de esquiva mal sucedida, a lança perfura seu peito. Outras criaturas aproximam-se ao ouvir o som do combate. O HOMEM-RINO ordena que te levem e seja sacrificado. Você falhou em sua missão.',
+        options: [
+            {
+                text: 'Voltar ao ínicio da aventura',
+                nextText: 1
+            },
+
+            {
+                text: 'Sair do jogo',
+                nextText: -1
+            }
+        ]
+    },
+
+    {
+        id: 44,
+        text: 'Enquanto você prepara o lançamento de uma magia para deixar a criatura fraca, ela avança sobre você e fere seu braço com a lança. Por sorte a magia foi lançada a tempo! A criatura começa abufar e ofegar, você tem a chance de liquidá-la!',
+        options: [
+            {
+                text: 'Derrotar a criatura e continuar',
+                nextText: 45
+            }
+        ]
+    },
+
+    {
+        id: 40,
+        text: 'A criatura fica olhando fixamente para você com ar inquisitivo, com se estivesse insegura em relação a você.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 39
+            }
+        ]
+    },
+
+    {
+        id: 45,
+        text: 'Agora você está em um corredor estreino. Ele continua por alguns metros e termina em uma porta. A meio caminho, descendo a passagem, pode-se ver um arco, onde alguns degraus levam para baixo. Você pode seguir em direção a porta ou descer as escadas. O que você faz?',
+        options: [
+            {
+                text: 'Seguir em direção a porta',
+                nextText: 46
+            },
+
+            {
+                text: 'Descer as escadas',
+                nextText: 47 /*344 */
+            }
+        ]
+    },
+
+    {
+        id: 46,
+        text: 'Você experimenta a maçaneta da porta e ela gira, abrindo para um outro corredor. Logo adiante, a passagem vira para a direita e termina pouco depois em outra porta. Nesta porta há um letreiro que diz "Por favor, toque a campainha para chamar o mordomo". Uma corda - evidentemente a campainha - pende ao lado da porta. Você pode tocar a campainha e aguardar ou tentar abrir a porta. O que você faz?',
+        options: [
+            {
+                text: 'Tocar a campainha',
+                nextText: 48
+            },
+
+            {
+                text: 'Abrir a porta',
+                nextText: 49 /*361*/
+            }
+        ]
+    },
+    
+    {
+        id: 48,
+        text: 'Depois de vários minutos, a porta se abre lentamente, e uma criatura corcunda e deformada, com dentes podres, cabelos desgrenhados e roupas esfarrapadas, aparece na sua frente. "Sim, senhor, hehe, o que posso fazer pelo senhor?" rosna a criatura semi-humana.',
+        options: [
+            {
+                text: 'Continuar',
+                nextText: 50
+            }
+        ]
+    },
+
+    {
+        id: 50,
+        text: '"Estou sendo esperado", você responde e passa por ele, atravessando a porta com confiança. Ele fica um pouco surpreso com seu comportamento e gagueja, sem saber se entra em conflito com você ou não. "onde é a recepção", você pergunta. Ele olha para você de soslaio com um dos olhos e faz um gesto na direção de uma bifurcação para a esquerda, a pouca distância dali. Você acreditará nele e seguirá pela esquerda ou não confiará na criatura e seguirá pela direita?',
+        options: [
+            {
+                text: 'Vou pela esquerda',
+                nextText: 51 /*243*/
+            },
+
+            {
+                text: 'Vou pela direita',
+                nextText: 52 /*2*/
+            }
+        ]
+    },
 ]
 
 startGame()
+
+/* 118 */
