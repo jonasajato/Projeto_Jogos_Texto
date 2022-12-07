@@ -431,7 +431,7 @@ const textNodes = [
         options: [
             {
                 text: 'Continuar',
-                nextText: 
+                nextText: 100
             }
         ]
     },
