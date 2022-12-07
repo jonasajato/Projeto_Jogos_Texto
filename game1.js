@@ -414,7 +414,7 @@ const textNodes = [
     },
 
     {
-        id: 36,
+        id: 38,
         text: 'A criatura grunhe e abre a porta para deixar você entrar.',
         options: [
             {
@@ -431,7 +431,7 @@ const textNodes = [
         options: [
             {
                 text: 'Continuar',
-                nextText: 100
+                nextText: 45
             }
         ]
     },
@@ -503,7 +503,7 @@ const textNodes = [
 
     {
         id: 45,
-        text: 'Agora você está em um corredor estreino. Ele continua por alguns metros e termina em uma porta. A meio caminho, descendo a passagem, pode-se ver um arco, onde alguns degraus levam para baixo. Você pode seguir em direção a porta ou descer as escadas. O que você faz?',
+        text: 'Agora você está em um corredor estreito. Ele continua por alguns metros e termina em uma porta. A meio caminho, descendo a passagem, pode-se ver um arco, onde alguns degraus levam para baixo. Você pode seguir em direção a porta ou descer as escadas. O que você faz?',
         options: [
             {
                 text: 'Seguir em direção a porta',
